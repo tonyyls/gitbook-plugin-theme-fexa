@@ -1,6 +1,6 @@
 # Gitbook theme for BingoPaaS Docs
 
-![Image](https://github.com/tonyyls/gitbook-plugin-theme-fexa/raw/master/preview.png)
+![Image](https://github.com/tonyyls/gitbook-plugin-theme-fexa/blob/master/preview.gif)
 
 ## Usage
 
@@ -34,5 +34,21 @@ Install by command:
 ``` bash
 gitbook install
 ```
+
+## Recommand plugins
+
+```js
+plugins: [
+    '-sharing',
+    "-fontsettings",
+    'back-to-top-button',
+    "copy-code-button",
+    "expandable-chapters",
+    "heading-anchors",
+    "theme-fexa"
+    //...
+]
+```
+
 
 Enjoy!
