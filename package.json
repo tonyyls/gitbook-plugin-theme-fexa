@@ -1,0 +1,27 @@
+{
+  "name": "gitbook-plugin-theme-fexa",
+  "author": {
+    "name": "yulongsheng"
+  },
+  "bugs": {
+    "url": "https://github.com/tonyyls/gitbook-plugin-theme-fexa/issues"
+  },
+  "dependencies": {},
+  "description": "Gitbook theme for BingoPaaS docs",
+  "engines": {
+    "gitbook": ">=3.0.0"
+  },
+  "homepage": "https://github.com/tonyyls/gitbook-plugin-theme-fexa#readme",
+  "keywords": [
+    "gitbook",
+    "theme",
+    "fexa"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonyyls/gitbook-plugin-theme-fexa.git"
+  },
+  "scripts": {},
+  "version": "1.0.0"
+}

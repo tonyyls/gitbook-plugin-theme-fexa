@@ -1,0 +1,217 @@
+body {
+  font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "\9ED1\4F53", Arial, sans-serif;
+  letter-spacing: .2px;
+  text-rendering: optimizeLegibility;
+}
+
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5,
+.markdown-section h6 {
+  margin-bottom: .5em;
+  font-weight: 400;
+}
+
+.markdown-section p {
+  line-height: 2;
+}
+
+.markdown-section img {
+  padding: 14px;
+  background: #e4e4e478;
+}
+
+.markdown-section table {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  border-bottom: 1px solid #e7e7eb;
+}
+
+.markdown-section table td,
+.markdown-section table th {
+  border: none
+}
+
+.markdown-section table tr:first-child {
+  border: none
+}
+
+.markdown-section thead tr:first-child {
+  background-color: #f6f8f9
+}
+
+.markdown-section table tr:nth-child(2n){
+  background-color:#fdfdfd;
+}
+
+.markdown-section table tr {
+  border-top: 1px solid #e7e7eb
+}
+
+.markdown-section table th {
+  font-weight: 400;
+  color: #8d8d8d;
+  text-align: left;
+  height: 40px;
+  padding: 6px 20px;
+  white-space: nowrap
+}
+
+.markdown-section table td {
+  height: 60px;
+  padding: 12px 20px
+}
+
+.exc-trigger {
+  color: #8d8d8d;
+}
+
+/*Book inner page*/
+
+.book-summary,
+.book-body {
+  top: 80px;
+}
+
+.book-summary ul.summary li.active {
+  border-left: 2px solid #f34d4d;
+  background: #f3f1f1;
+}
+
+.book-summary ul.summary li.active>a {
+  color: #f34d4d;
+  text-decoration: none;
+}
+
+.book-summary ul.summary li a:hover {
+  text-decoration: none;
+}
+
+.header-inner #book-search-input {
+  float: right;
+  width: 300px;
+  margin: 10px 0;
+  padding: 0;
+  border: none;
+  background: #f34d4d;
+  user-select: none;
+}
+
+.header-inner #book-search-input input[type="text"] {
+  width: 80%;
+  background: #e4e4e4;
+}
+
+.header-inner #book-search-input #searchBtn {
+  color: #ffffff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.header-inner #book-search-input #searchBtn:hover {
+  color: #eae8e8;
+}
+
+.header-inner {
+  width: 100%;
+  padding: 10px 30px;
+  border-bottom: 1px solid #dededede;
+  margin: auto;
+  *zoom: 1;
+  height: 80px;
+}
+
+.header-inner:before,
+.header-inner:after {
+  content: " ";
+  display: table;
+  line-height: 0;
+}
+
+.header-inner:after {
+  clear: both;
+}
+
+.header-inner .logo {
+  float: left;
+  height: 50px;
+  display: none;
+}
+
+.header-inner .logo img {
+  display: block;
+  height: inherit;
+  padding: 5px 0;
+}
+
+.header-inner .title {
+  float: left;
+  font-size: 20px;
+  line-height: 60px;
+  margin-left: 10px;
+  color: #575656;
+}
+
+/* 导航 */
+
+.header-inner .header-nav {
+  list-style: none;
+  margin: 10px 20px 0 0;
+  padding: 0;
+  float: right;
+  display: table;
+}
+
+.header-inner .header-nav li {
+  display: table-cell;
+  vertical-align: middle;
+  min-width: 50px;
+  margin-right: 20px;
+  padding: 8px 10px 8px 10px;
+}
+
+.header-inner .header-nav li a {
+  color: #333333;
+}
+
+.header-inner .header-nav li a:hover,
+.header-inner .header-nav li a.active {
+  color: #f34d4d;
+}
+
+.header-inner .header-nav li a.active:hover {
+  cursor: #f34d4d;
+}
+
+@media (max-width: 768px) {
+  .book-summary,
+  .book-body {
+    top: 101px;
+  }
+  .header-inner #book-search-input {
+    clear: both;
+    width: 100%;
+  }
+}
+
+/*Book inner page end*/
+
+/*Page select langs*/
+
+.book-langs-index .inner {
+  text-align: center;
+}
+
+.book-langs-index .inner .logo {
+  max-width: 200px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.book-langs-index .inner .logo img {
+  max-width: 100%;
+}
+
+/*Page select langs end*/
