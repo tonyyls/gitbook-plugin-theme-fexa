@@ -1,14 +1,13 @@
 require(['gitbook', 'jquery'], function(gitbook, $) {
 
-     //logo
-    function setLogo() {
-        var $logo = $(".header-inner .logo");
-        var logoPath = gitbook.state.config.pluginsConfig["theme-fexa"]["logo"];
-        if(logoPath){
-            var pathName = location.pathname.split("/")[1];
-            logoPath = location.href.substr(0,location.href.indexOf(pathName))+ logoPath.replace("./","");
-            $logo.show();
-            $logo.find("img").attr("src",logoPath);
+    function getRootPath() {
+        var pathName = window.location.pathname.substring(1);
+        var webName = pathName == '' ? '' : pathName.substring(0, pathName.indexOf('/'));
+        if (webName == "") {
+            return window.location.protocol + '//' + window.location.host;
+        }
+        else {
+            return window.location.protocol + '//' + window.location.host + '/' + webName;
         }
     }
 
@@ -44,7 +43,5 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
     gitbook.events.on('page.change', function() {
         setConfig();
-
-        setLogo();
     });
 });

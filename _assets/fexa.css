@@ -137,7 +137,10 @@ body {
 .header-inner .logo {
   float: left;
   height: 50px;
-  display: none;
+  width: 120px;
+  background: url('./logo.png');
+  background-size:120px 50px;
+  background-repeat: no-repeat;
 }
 
 .header-inner .logo img {
