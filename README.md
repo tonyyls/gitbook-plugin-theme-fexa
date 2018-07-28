@@ -23,7 +23,8 @@ Add the theme to your book's configuration `book.json` or `book.js`:
     "pluginsConfig": {
         "theme-fexa":{
             "search-placeholder":"输入关键字搜索",
-            "logo":"./logo.png"
+            "logo":"./logo.png",
+            "favicon": "./favicon.ico"
         }
     }
 },
