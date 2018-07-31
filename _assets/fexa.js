@@ -11,7 +11,37 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         }
     }
 
-    function setConfig(){
+    //生成内容导航
+    function generateSectionNavigator(){
+        $(".page-inner .markdown-section").find("h1,h2").each(function(){
+            var cls="anchor-h1";
+            if($(this).is("h2")){
+                cls="anchor-h2";
+            }
+            var text = $(this).text();
+            $(".book-anchor-body").append("<a id='an_"+text+"' class='anchor-text "+cls+"' title='"+text+"'  href='#"+text+"'>"+text+"</a>")
+        });
+
+        $(".book-anchor-title").click(function () {
+            $(".book-anchor-body").toggle();
+        });
+
+        $(".book-anchor-body>a").click(function(){
+            $(".book-anchor-body>a").removeClass("selected");
+            $(this).addClass("selected");
+        });
+
+        //获取hash值定向到指定位置
+        var hash = decodeURIComponent(location.hash);
+        if(hash){
+            hash = hash.substring(1);
+            $("#an_"+hash).addClass("selected");
+        }
+        
+    }
+
+    //基础设置
+    function setBase(){
         //标题
         var $title = $(".header-inner .title");
         $title.text(gitbook.state.config.title);
@@ -29,19 +59,12 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         $(".summary .divider").hide();
     }
 
-    function toggleSearchFocus() {
-        var $search = $('#book-search-input');
-
-        $search.on('focus blur', 'input', function() {
-            $search.toggleClass('focus');
-        });
-    }
-
     gitbook.events.on('start', function() {
-        toggleSearchFocus();
+
     });
 
     gitbook.events.on('page.change', function() {
-        setConfig();
+        setBase();
+        generateSectionNavigator();
     });
 });

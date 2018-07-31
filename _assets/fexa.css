@@ -201,20 +201,43 @@ body {
 
 /*Book inner page end*/
 
-/*Page select langs*/
-
-.book-langs-index .inner {
-  text-align: center;
+/* Book  anchor*/
+.book-anchor{
+  width: 180px;
+  border: 1px solid #e0dede;
+  position: absolute;
+  top:100px;
+  right: 30px;
+  padding: 10px;
+  z-index: 999;
+  background: #f3f1f1;
+  user-select: none;
+  border-top: 3px solid #f34d4d;
 }
-
-.book-langs-index .inner .logo {
-  max-width: 200px;
-  margin-bottom: 40px;
-  display: inline-block;
+.book-anchor-title{
+  line-height: 28px;
+  cursor: pointer;
 }
-
-.book-langs-index .inner .logo img {
-  max-width: 100%;
+.book-anchor a{
+  display: block;
+  line-height: 22px;
+  color: #656565;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
 }
-
-/*Page select langs end*/
+.book-anchor a:hover{
+  color: #f34d4d;
+  text-decoration: none;
+}
+.book-anchor .selected{
+  color: #f34d4d;
+  text-decoration: none;
+}
+.book-anchor .anchor-h1{
+  
+}
+.book-anchor .anchor-h2{
+  padding-left: 10px;
+}
