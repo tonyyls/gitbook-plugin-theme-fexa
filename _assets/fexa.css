@@ -19,8 +19,18 @@ body {
 }
 
 .markdown-section img {
-  padding: 14px;
+  padding: 8px;
   background: #e4e4e478;
+  transition: all 1s;
+  box-sizing:border-box;
+  box-shadow:0 0 4px #dcdcdc;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 95%;
+}
+
+.markdown-section img:hover{
+  box-shadow:0 0 10px #bbb
 }
 
 .markdown-section table {
@@ -76,7 +86,7 @@ body {
 }
 
 .book-summary ul.summary li.active {
-  border-left: 2px solid #f34d4d;
+  border-right: 3px solid #f34d4d;
   background: #f3f1f1;
 }
 
