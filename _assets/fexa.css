@@ -3,7 +3,6 @@ body {
   letter-spacing: .2px;
   text-rendering: optimizeLegibility;
 }
-
 .markdown-section h1,
 .markdown-section h2,
 .markdown-section h3,
@@ -13,72 +12,40 @@ body {
   margin-bottom: .5em;
   font-weight: 400;
 }
-
 .markdown-section p {
   line-height: 2;
 }
-
 .markdown-section img {
   padding: 8px;
   background: #e4e4e478;
   transition: all 1s;
-  box-sizing:border-box;
-  box-shadow:0 0 4px #dcdcdc;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px #dcdcdc;
   margin-left: 10px;
   margin-right: 10px;
-  width: 95%;
+  max-width: 95%;
 }
-
-.markdown-section img:hover{
-  box-shadow:0 0 10px #bbb
-}
-
-.markdown-section table {
-  margin-top: 1em;
-  margin-bottom: 3em;
-  border-bottom: 1px solid #e7e7eb;
-}
-
-.markdown-section table td,
-.markdown-section table th {
-  border: none
-}
-
-.markdown-section table tr:first-child {
-  border: none
-}
-
-.markdown-section thead tr:first-child {
-  background-color: #f6f8f9
-}
-
-.markdown-section table tr:nth-child(2n){
-  background-color:#fdfdfd;
-}
-
-.markdown-section table tr {
-  border-top: 1px solid #e7e7eb
-}
-
-.markdown-section table th {
-  font-weight: 400;
-  color: #8d8d8d;
-  text-align: left;
-  height: 40px;
-  padding: 6px 20px;
-  white-space: nowrap
-}
-
-.markdown-section table td {
-  height: 60px;
-  padding: 12px 20px
+.markdown-section img:hover {
+  box-shadow: 0 0 10px #bbb
 }
 
 .exc-trigger {
-  color: #8d8d8d;
+  color: #333333;
+}
+
+.navigation {
+  display: none;
 }
 
 /*Book inner page*/
+
+.book-summary-title {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 30px;
+  font-size: 16px;
+  color: #adadad;
+}
 
 .book-summary,
 .book-body {
@@ -97,6 +64,11 @@ body {
 
 .book-summary ul.summary li a:hover {
   text-decoration: none;
+}
+
+.page-inner {
+  max-width: none;
+  padding: 20px 270px 40px 40px;
 }
 
 .header-inner #book-search-input {
@@ -149,7 +121,7 @@ body {
   height: 50px;
   width: 120px;
   background: url('./logo.png');
-  background-size:120px 50px;
+  background-size: 120px 50px;
   background-repeat: no-repeat;
 }
 
@@ -168,7 +140,6 @@ body {
 }
 
 /* 导航 */
-
 .header-inner .header-nav {
   list-style: none;
   margin: 10px 20px 0 0;
@@ -208,46 +179,43 @@ body {
     width: 100%;
   }
 }
-
 /*Book inner page end*/
 
 /* Book  anchor*/
-.book-anchor{
+.book-anchor {
   width: 180px;
-  border: 1px solid #e0dede;
   position: absolute;
-  top:100px;
+  top: 130px;
   right: 30px;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
   z-index: 999;
-  background: #f3f1f1;
   user-select: none;
-  border-top: 3px solid #f34d4d;
+  border-left: 2px solid #ececec;
 }
-.book-anchor-title{
-  line-height: 28px;
+.book-anchor-title {
+  line-height: 38px;
+  font-weight: 400;
   cursor: pointer;
 }
-.book-anchor a{
+.book-anchor a {
   display: block;
-  line-height: 22px;
+  line-height: 25px;
   color: #656565;
-  font-size: 12px;
+  font-size: 13px;
   overflow: hidden;
-  text-overflow:ellipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
-.book-anchor a:hover{
+.book-anchor a:hover {
   color: #f34d4d;
   text-decoration: none;
 }
-.book-anchor .selected{
+.book-anchor .selected {
   color: #f34d4d;
   text-decoration: none;
+  font-weight: bold;
 }
-.book-anchor .anchor-h1{
-  
-}
-.book-anchor .anchor-h2{
-  padding-left: 10px;
+.book-anchor .anchor-h1 {}
+.book-anchor .anchor-h2 {
+  padding-left: 20px;
 }

@@ -23,7 +23,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         });
 
         $(".book-anchor-title").click(function () {
-            $(".book-anchor-body").toggle();
+            // $(".book-anchor-body").toggle();
         });
 
         $(".book-anchor-body>a").click(function(){
