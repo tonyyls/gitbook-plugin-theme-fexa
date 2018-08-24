@@ -13,10 +13,13 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
     //生成内容导航
     function generateSectionNavigator(){
-        $(".page-inner .markdown-section").find("h1,h2").each(function(){
+        $(".page-inner .markdown-section").find("h1,h2,h3").each(function(){
             var cls="anchor-h1";
             if($(this).is("h2")){
                 cls="anchor-h2";
+            }
+            if($(this).is("h3")){
+                cls="anchor-h3";
             }
             var text = $(this).text();
             $(".book-anchor-body").append("<a id='an_"+text+"' class='anchor-text "+cls+"' title='"+text+"'  href='#"+text+"'>"+text+"</a>")
