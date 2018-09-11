@@ -55,7 +55,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         $search.find("input").attr("placeholder",placeholder);
         $search.append("<span id='searchBtn'>搜索</span>");
         $search.focus();
-        $("#searchBtn").click((e)=>{ });
+        $("#searchBtn").click(function(e){});
 
         //去掉gitbook-link
         $(".summary .gitbook-link").hide();

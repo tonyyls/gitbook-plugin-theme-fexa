@@ -46,7 +46,7 @@ plugins: [
     "-fontsettings",
     'back-to-top-button',
     "copy-code-button",
-    "expandable-chapters",
+    "cuav-chapters",
     "heading-anchors",
     "theme-fexa"
     //...
