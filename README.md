@@ -15,7 +15,9 @@ Add the theme to your book's configuration `book.json` or `book.js`:
         "themeFexa":{
             "nav":[
                 {
-                    "简易教程":"http://..."
+                    "url":"http://...",
+                    "target":"_blank",
+                    "name": "简易教程"
                 }
             ]
         },
