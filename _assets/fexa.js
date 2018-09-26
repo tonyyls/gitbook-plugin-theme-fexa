@@ -22,7 +22,8 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                 cls="anchor-h3";
             }
             var text = $(this).text();
-            $(".book-anchor-body").append("<a id='an_"+text+"' class='anchor-text "+cls+"' title='"+text+"'  href='#"+text+"'>"+text+"</a>")
+            var href = $(this).attr("id");
+            $(".book-anchor-body").append("<a id='an_"+text+"' class='anchor-text "+cls+"' title='"+text+"'  href='#"+href+"'>"+text+"</a>")
         });
 
         $(".book-anchor-title").click(function () {
